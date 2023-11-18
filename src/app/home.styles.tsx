@@ -13,7 +13,7 @@ export const HomeContainer = styled("main", {
     dotted: {
       true: {
         backgroundImage:
-        // HEX color ending 66 = 40% opacity
+          // HEX color ending 66 = 40% opacity
           `radial-gradient(circle at .1rem .1rem, ${theme.colors.accent.value}66 .1rem, transparent .1rem)`,
         backgroundSize: "40px 40px",
         backgroundPosition: "calc(50% - .1rem) calc(50% - .1rem)",
@@ -62,31 +62,32 @@ export const FavoriteBtn = styled("button", {
 export const MediaContainer = styled("a", {
   textDecoration: "underline",
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
+  gap: ".8rem",
   justifyContent: "center",
   alignItems: "center",
   cursor: "pointer",
   // HEX color ending in 66 = 40% of opacity
   filter: `drop-shadow(0 0 .6rem ${theme.colors.accent.value}66)`,
   color: "$accent",
-  transition: 'transform .3s ease-in-out',
-  '&:hover': {
-    transform: 'scale(1.1)'
-  }
+  transition: "transform .3s ease-in-out",
+  "&:hover": {
+    transform: "scale(1.1)",
+  },
 });
 
 export const MediaTitle = styled("span", {});
 
 export const MyMediasContainer = styled("div", {
   width: "clamp(12rem, 80%, 20rem)",
-  padding: ".8rem",
+  padding: "3.2rem",
   borderRadius: "1.6rem",
   border: "1px dashed $accent",
   display: "flex",
   flexDirection: "column",
-  gap: "2vh",
+  gap: "4vh",
   justifyContent: "center",
-  alignItems: "center",
+  alignItems: "flex-start",
   backgroundColor: "$primary",
 });
 
