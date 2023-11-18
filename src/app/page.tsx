@@ -34,7 +34,7 @@ export default function Home() {
           fill={true}
         />
       </LogoContainer>
-      <h2>@vitorgkoch</h2>
+      <h2>VITOR KOCH</h2>
 
       <FavoriteBtn
         type="button"
