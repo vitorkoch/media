@@ -7,7 +7,7 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
       colors: {
         primary: "#1e1e2e",
         secondary: "#cdd6f4",
-        accent: "#94e2d5",
+        accent: "#89dceb",
       },
     },
   });

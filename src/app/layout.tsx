@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Capriola } from "next/font/google";
+import { Jost } from "next/font/google";
 import { Stylesheet } from "./globals.styles";
 
-const capriola = Capriola({ subsets: ["latin"], weight: ["400"] });
+const jost = Jost({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Vitor Koch | Media",
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={capriola.className}>
+      <body className={jost.className}>
         {children}
         <Stylesheet />
       </body>
